@@ -14,8 +14,8 @@ const iconoMenu = document.querySelector("#iconoMenu"),
     menu = document.querySelector("#menuActive")
 
 iconoMenu.addEventListener("click", (e) => {
+
     menu.classList.toggle("active-menu")
-    document.body.classList.toggle("opacity-menu")
 });
 
 const shopContent = document.getElementById ("shop");
@@ -67,10 +67,14 @@ const cantidadCarrito = document.getElementById ("cantidadCarrito");
       saveLocal();
     });
   });
+  const btnOpenCart = document.getElementById("open");
+  const toggleCart = () => {
+    modalContainer.classList.toggle("is-active");}
+    btnOpenCart.addEventListener("click", toggleCart);
 
   verCarrito.addEventListener("click", () => {
+    
     modalContainer.innerHTML = "";
-    modalContainer.style.display = "flex";
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header";
     modalHeader.innerHTML = `
@@ -83,9 +87,15 @@ const cantidadCarrito = document.getElementById ("cantidadCarrito");
     modalButton.innerText ="x";
     modalButton.className = "modal-button";
 
-    modalButton.addEventListener("click", () => {
-      modalContainer.style.display = "none"
-    });
+
+    
+   
+//Boton cerrar carrito
+
+    // modalButton.addEventListener("click", () => {
+    //   console.log("ASD");
+    //   modalContainer.classList.toggle ('is-active')
+    // });
 
     modalHeader.append(modalButton);
     

@@ -1,6 +1,6 @@
+
 const pintarCarrito = () => {
     modalContainer.innerHTML = "";
-    modalContainer.style.display = "flex";
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header";
     modalHeader.innerHTML = `
@@ -13,9 +13,7 @@ const pintarCarrito = () => {
     modalButton.innerText ="x";
     modalButton.className = "modal-button";
 
-    modalButton.addEventListener("click", () => {
-      modalContainer.style.display = "none"
-    });
+  
 
     modalHeader.append(modalButton);
     
