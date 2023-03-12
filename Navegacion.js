@@ -30,7 +30,7 @@ const cantidadCarrito = document.getElementById ("cantidadCarrito");
     content.className = "card";
     content.innerHTML = `
     <img src="${product.img}" class="img">
-    <h2>${product.nombre}</h2>
+    <h2 class="texto-descript">${product.nombre}</h2>
     <p>Cantidad:${product.cantidad}</p>
     <p>Preacio:$${product.precio}</p>
     `;
@@ -83,19 +83,7 @@ const cantidadCarrito = document.getElementById ("cantidadCarrito");
     `;
     modalContainer.append(modalHeader);
 
-    const modalButton = document.createElement("h1");
-    modalButton.innerText ="x";
-    modalButton.className = "modal-button";
 
-
-    
-   
-//Boton cerrar carrito
-
-    // modalButton.addEventListener("click", () => {
-    //   console.log("ASD");
-    //   modalContainer.classList.toggle ('is-active')
-    // });
 
     modalHeader.append(modalButton);
     
@@ -118,6 +106,8 @@ const cantidadCarrito = document.getElementById ("cantidadCarrito");
     totalCompra.className = "total-compra";
     totalCompra.innerHTML = `Total a pagar: $${total}`;
     modalContainer.append(totalCompra);
+
+    
   });
 
   const saveLocal = () => { 

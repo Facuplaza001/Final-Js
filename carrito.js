@@ -8,14 +8,6 @@ const pintarCarrito = () => {
 
     `;
     modalContainer.append(modalHeader);
-
-    const modalButton = document.createElement("h1");
-    modalButton.innerText ="x";
-    modalButton.className = "modal-button";
-
-  
-
-    modalHeader.append(modalButton);
     
     carrito.forEach ((product) => {
       let carritoContent = document.createElement("div");
@@ -30,6 +22,7 @@ const pintarCarrito = () => {
 
       modalContainer.append(carritoContent);
 
+      
       let eliminar = document.createElement("span");
       eliminar.innerText = "❌"
       eliminar.className = "dlelete-product"
@@ -44,6 +37,16 @@ const pintarCarrito = () => {
     totalCompra.className = "total-compra";
     totalCompra.innerHTML = `Total a pagar: $${total}`;
     modalContainer.append(totalCompra);
+    
+    const vaciarCarrito = document.createElement('button');
+    vaciarCarrito.className = "comprar";
+    vaciarCarrito.innerHTML = `Vaciar carrito`;
+    modalContainer.append(vaciarCarrito)
+
+    const continuarCompra = document.createElement('button')
+    continuarCompra.className = "comprar"
+    continuarCompra.innerHTML = `Contunuar Compra`
+    modalContainer.append(continuarCompra)
   };
 
   verCarrito.addEventListener("click", pintarCarrito)

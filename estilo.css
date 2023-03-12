@@ -51,7 +51,8 @@ body{
     height: 98%;
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    align-items: self-end;
 }
 
 .menu{
@@ -156,6 +157,8 @@ body{
     width: 40%;
     height:20%;
     cursor: pointer;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 .comprar:hover{
@@ -168,12 +171,13 @@ body{
     display: flex;
     transform: translate(600px);
     transition: 3s;
-    width: 40%;
-    height: 100vh;
+    width: 35%;
+    height: 100%;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background-color: white;
+    transition: all .5s ease
    
 }
 .is-active{
@@ -204,7 +208,7 @@ body{
 .modal-header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 5%;
     width: 80%;
     background-color: white;
@@ -243,4 +247,11 @@ body{
     right: 180px;
     position: absolute;
     display: none;
+}
+
+.texto-descript{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
