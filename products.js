@@ -1,6 +1,7 @@
 const stockProductos = [
     {
       id: 1,
+      categoria:"Adidas",
       nombre: "Adidas Max Advantage",
       cantidad: 1,
       precio: 20000,
@@ -8,6 +9,7 @@ const stockProductos = [
     },
     {
       id: 2,
+      categoria:"Adidas",
       nombre: "Adidas Air max Furiozas",
       cantidad: 1,
       precio: 15000,
@@ -15,6 +17,7 @@ const stockProductos = [
     },
     {
       id: 3,
+      categoria:"Nike",
       nombre: "Nike Giannis Immortality",
       cantidad: 1,
       precio: 15700,
@@ -22,6 +25,7 @@ const stockProductos = [
     },
     {
       id: 4,
+      categoria:"New Balance",
       nombre: "New Balance Disrurt",
       cantidad: 1,
       precio: 13000,
@@ -29,6 +33,7 @@ const stockProductos = [
     },
     {
       id: 5,
+      categoria:"Nike",
       nombre: "Nike Lebron",
       cantidad: 1,
       precio: 35000,
@@ -36,6 +41,7 @@ const stockProductos = [
     },
     {
       id: 6,
+      categoria:"Nike",
       nombre: "Nike Ozelia",
       cantidad: 1,
       precio: 16000,
@@ -43,6 +49,7 @@ const stockProductos = [
     },
     {
       id: 7,
+      categoria:"Adidas",
       nombre: "Adidas Ozweego",
       cantidad: 1,
       precio: 14000,
@@ -50,6 +57,7 @@ const stockProductos = [
     },
     {
       id: 8,
+      categoria:"DC",
       nombre: "DC Pure",
       cantidad: 1,
       precio: 12000,
@@ -57,6 +65,7 @@ const stockProductos = [
     },
     {
       id: 9,
+      categoria:"Adidas",
       nombre: "Adidas Yezze 750",
       cantidad: 1,
       precio: 14000,
@@ -64,6 +73,7 @@ const stockProductos = [
     },
     {
       id: 10,
+      categoria:"DC",
       nombre: "DC Metric",
       cantidad: 1,
       precio: 9000,
