@@ -54,6 +54,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: self-end;
+    margin-top: 5px;
 }
 
 .menu{
@@ -255,4 +256,31 @@ body{
     justify-content: center;
     align-items: center;
 
+}
+
+.filtrado{
+    width: 90%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.imag{
+    width: 90%;
+}
+
+.marcas{
+    width: 45%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imag:hover{
+    background-color: blue;
 }

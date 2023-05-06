@@ -84,6 +84,12 @@ const cantidadCarrito = document.getElementById ("cantidadCarrito");
     modalContainer.append(modalHeader);
 
 
+//Boton cerrar carrito
+
+    // modalButton.addEventListener("click", () => {
+    //   console.log("ASD");
+    //   modalContainer.classList.toggle ('is-active')
+    // });
 
     modalHeader.append(modalButton);
     

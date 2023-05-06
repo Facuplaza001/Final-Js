@@ -1,8 +1,8 @@
 const stockProductos = [
     {
       id: 1,
-      categoria:"Adidas",
-      nombre: "Adidas Max Advantage",
+      categoria:"Nike",
+      nombre: "Nike Max Advantage",
       cantidad: 1,
       precio: 20000,
       img: "fotos/adidasMaxAdvantage.png",
