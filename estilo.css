@@ -14,10 +14,18 @@ header {
   display: flex;
   width: 100%;
   height: 10vh;
-  display: flex;
   flex-flow: row;
   justify-content: space-between;
 }
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
 .navegacion {
   z-index: 1000;
   position: fixed;
@@ -199,11 +207,6 @@ header {
   -o-transform: translate(100%);
 }
 
-.modal-container img {
-  width: 100%;
-  height: 40%;
-}
-
 .modal-button {
   cursor: pointer;
   width: 20%;
@@ -218,36 +221,10 @@ header {
   background-color: red;
 }
 
-.modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 5%;
-  width: 80%;
-  background-color: white;
-  padding: 10px;
-}
-
 .total-compra {
   padding: 10px;
   text-align: center;
   padding-top: 40px;
-}
-
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 40%;
-  width: 65%;
-}
-.dlelete-product {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 90%;
 }
 
 .cantidad-carrito {
@@ -295,3 +272,156 @@ header {
 .activados {
   background-color: blue;
 }
+
+/*///////CART//////*/
+.cart__main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 56%;
+
+  overflow-x: hidden;
+}
+.contenedordeimagen {
+  width: 100%;
+  height: 110px;
+}
+
+.modal-container img {
+  width: 100%;
+  height: 100%;
+}
+.card1 {
+  margin-bottom: 13%;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+}
+.disabled {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border: 1px solid #5c5b5b;
+  color: white;
+  background-image: transparent;
+  cursor: not-allowed;
+  border-radius: 16px;
+  background-color: blue;
+}
+
+.disabled:hover {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border: 1px SOLID #d7d5d5;
+  color: #dddcdc;
+  background-image: transparent;
+  cursor: not-allowed;
+}
+.cart__heading {
+  margin-bottom: 15%;
+  font-weight: 900;
+  color: blue;
+}
+.nav__span {
+  display: flex;
+  align-items: CENTER;
+  justify-content: center;
+  background-color: blue;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  font-size: small;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  left: 30px;
+  top: 11px;
+}
+
+.btn-buy{
+  font-size: 12px;
+  padding: 8px 15px;
+  border: 1px solid rgb(92, 91, 91);
+  color: white;
+  border-radius: 16px;
+  background-color: blue;
+}
+
+.btn-delete{
+  font-size: 12px;
+  padding: 8px 15px;
+  border: 1px solid rgb(92, 91, 91);
+  color: white;
+  border-radius: 16px;
+  background-color: blue;
+}
+
+.pieletras {
+  width: 100%;
+  height: 30%;
+}
+
+.ft-social {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  align-items: center;
+  place-content: center;
+}
+
+.ft-social-list {
+  width: 35%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  place-content: space-around;
+}
+
+.ft-social-list i {
+  font-size: 1.5em;
+  color: white;
+}
+
+.ft-social-list i:hover{ 
+  color: #000;; 
+}
+
+.pieletras  { 
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 25%;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.ubicacion {
+  display: flex;
+  width: 80%;
+  place-content: space-around;
+  place-items: center;
+  align-items: center;
+  display: flex;
+}
+.cards2{    
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.cards2 i {
+  color: black;
+} 
+
+.pieletras p { 
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+

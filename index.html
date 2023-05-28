@@ -29,6 +29,7 @@
           <img class="logo" src="./Logo/Captura de pantalla 2023-02-02 102653.png" alt="">
         </div>
         <div class="carrito-compras" id="verCarrito">
+          <span class="nav__span" id="icon-span"></span>
           <i class="bibi-basket" id="open"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
               fill="currentColor" class="bibi-basket" viewBox="0 0 16 16" color="blue">
               <path
@@ -43,13 +44,43 @@
         <li>Inicio</li>
         <li>Calzado</li>
         <li>Locales</li>
-        <li>Iniciar sesión</li>
+        <li><a href="login.html" style="text-decoration: none;">Iniciar sesión</a></li>
       </ul>
     </div>
 
     <div class="modal-container is-active" id="modal-container">
-      //CARRITO
+
+      <span class="cart__heading">CARRITO</span>
+
+      <div class="cart__main">
+        <!-- <div class="card1 card--cart box-shadow">
+          <img class="card__img" src="fotos/Adidas-logo.png" alt="title" />
+
+          <div class="card__info">
+            <p class="card__name">{title}</p>
+            <p class="card__price gradient-text">$ {price}</p>
+          </div>
+
+          <div class="card__buttons">
+            <span class="card__quantity">1</span>
+          </div>
+        </div> -->
+
+
+      </div>
+
+      <div class="cart-total" id="cart">
+        <p>Total:</p>
+        <span class="total"></span>
+      </div>
+      <div class="btn-contain">
+        <button class="btn-buy btn">Comprar</button>
+        <button class="btn-delete btn">Vaciar carrito</button>
+      </div>
+
     </div>
+
+
   </header>
 
 
@@ -91,11 +122,27 @@
   </div>
 
   <footer>
-
-
-
-
-  </footer>
+    <div class="pieletras"><p>Donde encontrarnos</p>
+        <div class="ubicacion">
+          <div class="cards2">
+            <i class="fa-solid fa-location-dot"></i><p>Bahia Blanca
+              Buenos Aires, Argentina</p>
+           </div>
+           <div class="cards2">
+            <i class="fa-solid fa-phone"></i><p>+54 2915222855</p>
+          </div>
+        </div>
+    </div>
+    <section class="ft-social">
+      <ul class="ft-social-list">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-paypal"></i></a></li>
+      </ul>
+    </section>
+   </footer>
   <script src="products.js"></script>
   <script src="Navegacion.js"></script>
   <script src="carrito.js"></script>

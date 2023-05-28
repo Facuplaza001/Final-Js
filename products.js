@@ -4,7 +4,7 @@ const products = [
     category: "Nike",
     nombre: "Nike Max Advantage",
     cantidad: 1,
-    precio: 20000,
+    precio: "20000",
     img: "fotos/adidasMaxAdvantage.png",
   },
   {
