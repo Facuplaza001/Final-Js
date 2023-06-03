@@ -17,62 +17,75 @@ iconoMenu.addEventListener("click", (e) => {
   menu.classList.toggle("active-menu");
 });
 
-const form = document.getElementById('formulario');
-const inputNombre = document.getElementById('nombre');
-const inputEmail = document.getElementById('email');
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmPassword');
 
 form.addEventListener('submit', e => {
-  e.preventDefault();
+    e.preventDefault();
 
-  validateInputs();
+    validateInputs();
 });
 
-const setError = (element,message) =>{
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error')
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
 
-  errorDisplay.innerText = message;
-  inputControl.classList.add('error')
-  inputControl.classList.remove('success')
-};
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
 
-const setSuccess = element =>{
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error')
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
 
-  errorDisplay.innerText = '';
-  inputControl.classList.add('success');
-  inputControl.classList.remove('error')
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
 };
 
 const isValidEmail = email => {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }
 
 const validateInputs = () => {
-  const usernameValue = username.value.trim();
-  const emailValue = email.avlue.trim();
-  const passwordValue = password.value.trim();
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const confirmPasswordValue = confirmPassword.value.trim();
 
+    if(usernameValue === '') {
+        setError(username, 'Se requiere Nombre');
+    } else {
+        setSuccess(username);
+    }
 
-  if(usernameValue === '') {
-    setError(username, "El nombre es necesario")
-  } else {
-    setSuccess(username);
-  }
+    if(emailValue === '') {
+        setError(email, 'Se requiere email');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Proporcione una dirección de correo electrónico válida');
+    } else {
+        setSuccess(email);
+    }
 
-  if(emailValue === ''){
-    setError(email, "El emali es necesario")
-  } else if (!isValidEmail(emailValue)) {
-    setError(email, "Ingrese un email valido")
-  }
+    if(passwordValue === '') {
+        setError(password, 'Se requiere contraseña');
+    } else if (passwordValue.length < 8 ) {
+        setError(password, 'La contraseña debe tener al menos 8 caracteres')
+    } else {
+        setSuccess(password);
+    }
 
-  if (passwordValue === '') {
-    setError(password, "La contraseña es necesaria")
-  } else if (passwordValue.length < 8) {
-    setError(password, "Deve tener al menos 8 caracteres")
-  } else {
-    setSuccess(password);
-  }
+    if(confirmPasswordValue === '') {
+        setError(confirmPassword, 'Porfavor confirmar contraseña');
+    } else if (confirmPasswordValue !== passwordValue) {
+        setError(confirmPassword, "Las contraseñas no coinciden");
+    } else {
+        setSuccess(confirmPassword);
+    }
+
 };

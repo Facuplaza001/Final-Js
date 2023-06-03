@@ -51,18 +51,32 @@
 
   </header>
 
-  <div class="cuerpo">
-    <form class="descript">
-      <label for="username">Correo electronico:</label>
-      <input type="text" id="username" name="username">
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password">
-      <label for="confirmpassword">Confirmar Contraseña:</label>
-      <input type="password" id="password" name="confirmpassword">
-      <input type="submit" value="Crear Usuario">
-    </form>
-    
-  </div>
+    <div class="cuerpo">
+        <form id="form" action="/" class="descript">
+            <h1>Registrate</h1>
+            <div class="input-control">
+                <label for="username">Usuario:</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Contraseña</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="confirmPassword">Repetir contrasenia</label>
+                <input id="confirmPassword"name="confirmPassword" type="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit" id="register">Registrarse</button>
+        </form>
+    </div>
 
   <footer>
 

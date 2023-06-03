@@ -10,7 +10,7 @@ body {
     font-family: "Bitter", serif;
     font-family: "Montserrat Alternates", sans-serif;
   }
-  header {
+header {
     display: flex;
     width: 100%;
     height: 10vh;
@@ -129,34 +129,81 @@ body {
     justify-content: center;
     flex-direction: column;
     
+  }
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+.descript{
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7px;
 }
 
 .descript label{
-    height: 10%;
-    width: 24%;
-    font-size: 17px;
+  height: 10%;
+  width: 90%;
+  font-size: 17px;
 }
- 
+
 .descript input{
-    margin: 10px;
-    height: 10%;
-    width: 30%;
-    font-size: 12px;
-    padding: 8px 15px;
-    border: 1px solid rgb(92, 91, 91);
-    color: white;
-    border-radius: 16px;
-    background-color: blue;
+  margin: 10px;
+  height: 40%;
+  width: 90%;
+  font-size: 12px;
+  padding: 8px 15px;
+  border: 1px solid rgb(92, 91, 91);
+  color: white;
+  border-radius: 16px;
+  background-color: blue;
 }
 .descript input:hover{
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .descript a{
-    margin: 6px;
+  margin: 6px;
 }
 
 .menu-active a{
-  text-decoration: none;
+text-decoration: none;
+}
+ .descript button{
+  border-radius: 15px;
+  height: 30px;
+  width: 20%;
+  background: blue;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+ .descript button:hover{
+  background-color: black;
  }
+
