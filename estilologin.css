@@ -209,10 +209,6 @@ text-decoration: none;
  }
 
  @media (max-width: 1500px) and (min-width: 1300px){
- }
-  .modal-container {
-    padding: 11% 0 0 0;
-  }
 
   .menu-active ul {
     padding: 56% 0px 20px 0px;
@@ -222,15 +218,12 @@ text-decoration: none;
     font-size: 30px;
     padding: 10px 30px;
   }
+}
   
   /*///////////////////////////////////////////////////////////*/
   
   @media (max-width: 1299px) and (min-width: 1100px){
     
-    .modal-container {
-      padding: 11% 0 0 0;
-    }
-
     .menu-active ul {
       padding: 56% 0px 20px 0px;
     }
@@ -243,11 +236,6 @@ text-decoration: none;
   }
   /*//////////////////////////////////////////////////////////*/
   @media (max-width: 1099px) and (min-width: 850px){
-    
-    .modal-container {
-      padding: 10% 0 0 0;
-    }
-
     .menu-active li {
       font-size: 25px;
       padding: 10px 21px;

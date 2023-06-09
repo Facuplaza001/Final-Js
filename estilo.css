@@ -280,7 +280,7 @@ footer{
   flex-flow: column;
   align-items: center;
   width: 100%;
-  height: 56%;
+  height: 50%;
 
   overflow-x: hidden;
 }
@@ -433,21 +433,20 @@ footer{
     flex-flow: row;
     justify-content: space-between;
    }
-   .cart__main{
-    height: 70%;
+   .cart__main {
+    height: 66%;
   }
-  
   .modal-container {
-    padding: 11% 0 0 0;
-  }
+    padding: 6% 0 0 0;
+  } 
 
   .menu-active ul {
-    padding: 56% 0px 20px 0px;
+    padding: 27% 0px 20px;
   }
 
-  .menu-active li{
+  .menu-active li {
     font-size: 30px;
-    padding: 10px 30px;
+    padding: 20px 30px;
   }
 
   .filtrado{

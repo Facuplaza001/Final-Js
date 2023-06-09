@@ -133,9 +133,7 @@ const renderCartProduct = (cartProduct) => {
           </div>
 
           <div class="card__buttons">
-                  <button class="btn btn--cart down" data-id="${id}">-</button>
                   <span class="card__quantity">${quantity}</span>
-                  <button class="btn btn--cart up" data-id="${id}">+</button>
               </div>
         </div>
       
@@ -335,7 +333,6 @@ const categories = document.querySelector(".filtrado");
 const init = () => {
   renderProducts();
   categories.addEventListener("click", applyFilter);
-  renderProducts();
   document.addEventListener("DOMContentLoaded", renderCart);
   document.addEventListener("click", addProduct);
   modalContainer.addEventListener("DOMContentLoaded", handleQuantity);
