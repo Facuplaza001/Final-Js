@@ -25,7 +25,7 @@ const confirmPassword = document.getElementById('confirmPassword');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
+    validateInputsLogin();
     validateInputs();
 });
 
@@ -88,4 +88,25 @@ const validateInputs = () => {
         setSuccess(confirmPassword);
     }
 
-};
+   }; 
+const validateInputsLogin = () => {
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+  
+    if (emailValue === "") {
+      setError(email, "Se requiere email");
+    } else if (!isValidEmail(emailValue)) {
+      setError(email, "Proporcione una dirección de correo electrónico válida");
+    } else {
+      setSuccess(email);
+    }
+  
+    if (passwordValue === "") {
+      setError(password, "Se requiere contraseña");
+    } else if (passwordValue.length < 8) {
+      setError(password, "La contraseña debe tener al menos 8 caracteres");
+    } else {
+      setSuccess(password);
+    }
+  };
+  

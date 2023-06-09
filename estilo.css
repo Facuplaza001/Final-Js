@@ -252,6 +252,7 @@ footer{
   justify-content: space-around;
   align-items: center;
   background-color: white;
+  margin-top: 30px
 }
 
 .marcas .card__name {
@@ -432,6 +433,30 @@ footer{
     flex-flow: row;
     justify-content: space-between;
    }
+   .cart__main{
+    height: 70%;
+  }
+  
+  .modal-container {
+    padding: 11% 0 0 0;
+  }
+
+  .menu-active ul {
+    padding: 56% 0px 20px 0px;
+  }
+
+  .menu-active li{
+    font-size: 30px;
+    padding: 10px 30px;
+  }
+
+  .filtrado{
+    margin-top: 30px;
+  }
+
+  .comprar{
+    width: 60%;
+  }
   }
   
   /*///////////////////////////////////////////////////////////*/
@@ -440,19 +465,97 @@ footer{
     header{
       height: 7vh;
     }
+
+    .cart__main{
+      height: 70%;
+    }
+    
+    .modal-container {
+      padding: 11% 0 0 0;
+    }
+
+    .menu-active ul {
+      padding: 56% 0px 20px 0px;
+    }
+
+    .menu-active li{
+      font-size: 30px;
+      padding: 10px 30px;
+    }
+
+    .filtrado{
+      margin-top: 0px;
+    }
+
+    .comprar{
+      width: 60%;
+    }
   }
   /*//////////////////////////////////////////////////////////*/
   @media (max-width: 1099px) and (min-width: 850px){
     header{
       height: 8vh;
     }
+    .filtrado{
+      margin-top: 10px;
+      }
+
+      .marcas .card__name {
+        width: 130px;
+        height: 90px;
+      }
+
+      .btn-contain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal-container {
+        padding: 10% 0 0 0;
+      }
+
+      .menu-active ul {
+        padding: 48% 0px 20px 0px;
+      }
+
+      .comprar{
+        width: 70%;
+      }
+
+      .menu-active li {
+        font-size: 25px;
+        padding: 10px 21px;
+      }
+
+      .modal-container img {
+        width: 100%;
+        height: 90%;
+      }
+
+      .contenedordeimagen {
+        width: 100%;
+        height: 99px;
+      }
   }
+
 
   @media (max-width: 850px) and (min-width: 700px){ 
     header {
       height: 10vh;
   }
-    .modal-container img {
+  .filtrado{
+    margin-top: 10px;
+  }
+
+  .modal-container {
+    padding: 11% 0 0 0;
+  }
+  .menu-active ul {
+    padding: 52% 0px 20px 0px;
+  }
+  .modal-container img {
       width: 100%;
       height: 70%;
   }
@@ -463,41 +566,41 @@ footer{
     align-items: center;
   }
   .marcas .card__name {
-    width: 130px;
-    height: 90px;
-  }
+    width: 113px;
+    height: 80px;
+}
 
   .menu-active li {
-    color: black;
-    display: block;
     font-size: 25px;
-    text-decoration: none;
     padding: 9px 10px;
-    cursor: pointer;
 }
+  .comprar{
+    width: 70%;
+  }
   }
   /*//////////////////////////////////////////////////////////*/
   @media (max-width: 699px) and (min-width:500px){
     header {
       height: 10vh;
     }
-    
-      .marcas .card__name {
-        width: 111px;
-        height: 80px;
+
+    .menu-active ul{
+      padding: 75% 0px 20px 0px;
+    }
+
+    .menu-active li{
+      font-size: 20px;
+      padding: 9px 3px;
+    }
+
+    .filtrado{
+      margin-top: 10px;
+    }
+
+    .marcas .card__name {
+      width: 80px;
+      height: 59px;
   }
-    .card__name {
-      width: 100px;
-      height: 72px;
-  }
-    .menu-active li {
-      color: black;
-      display: block;
-      font-size: 25px;
-      text-decoration: none;
-      padding: 9px 10px;
-      cursor: pointer;
-}
     .cuerpo {
       margin-top: 4%;
     }
@@ -512,9 +615,64 @@ footer{
       justify-content: center;
       align-items: center;
 }
+    .comprar{
+      width: 90%;
+    }
+
+    .modal-container {
+      padding: 14% 0 0 0;
+    }
+
+    .cart__main {
+      height: 46%;
+    }
+
+    .modal-container img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .contenedordeimagen {
+      width: 100%;
+      height: 50px;
+    }
     }
   
       @media (max-width: 499px){ 
+        .marcas .card__name {
+          width: 78px;
+          height: 59px;
+        }
+
+        .modal-container {
+          padding: 15% 0 0 0;
+        }
+        .menu-active ul{
+          padding: 75% 0px 20px 0px;
+        }
     
+        .menu-active li{
+          font-size: 20px;
+          padding: 9px 3px;
+        }
     
+        .filtrado{
+          margin-top: 22px;
+        }
+
+        .comprar{
+          width: 90%;
+        }
+        .modal-container img {
+          width: 100%;
+          height: 81%;
+      }
+        .contenedordeimagen {
+         width: 100%;
+         height: 56px;
+      }
+
+      .cart__main{
+        height: 48%;
+      }
       }

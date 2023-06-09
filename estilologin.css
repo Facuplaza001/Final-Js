@@ -134,6 +134,7 @@ header {
 .input-control {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 
@@ -207,3 +208,89 @@ text-decoration: none;
   background-color: black;
  }
 
+ @media (max-width: 1500px) and (min-width: 1300px){
+ }
+  .modal-container {
+    padding: 11% 0 0 0;
+  }
+
+  .menu-active ul {
+    padding: 56% 0px 20px 0px;
+  }
+
+  .menu-active li{
+    font-size: 30px;
+    padding: 10px 30px;
+  }
+  
+  /*///////////////////////////////////////////////////////////*/
+  
+  @media (max-width: 1299px) and (min-width: 1100px){
+    
+    .modal-container {
+      padding: 11% 0 0 0;
+    }
+
+    .menu-active ul {
+      padding: 56% 0px 20px 0px;
+    }
+
+    .menu-active li{
+      font-size: 30px;
+      padding: 10px 30px;
+    }
+    
+  }
+  /*//////////////////////////////////////////////////////////*/
+  @media (max-width: 1099px) and (min-width: 850px){
+    
+    .modal-container {
+      padding: 10% 0 0 0;
+    }
+
+    .menu-active li {
+      font-size: 25px;
+      padding: 10px 21px;
+    }
+    .menu-active ul {
+      padding: 48% 0px 20px 0px;
+    }
+  }
+
+
+  @media (max-width: 850px) and (min-width: 700px){ 
+    .descript button {
+      width: 36%;
+    }
+    .menu-active li {
+      font-size: 25px;
+      padding: 9px 10px;
+    }
+    .menu-active ul {
+      padding: 52% 0px 20px 0px;
+    }
+  }
+  /*//////////////////////////////////////////////////////////*/
+  @media (max-width: 699px) and (min-width:500px){
+    .descript button {
+      width: 36%;
+    }
+    .menu-active ul{
+      padding: 75% 0px 20px 0px;
+    }
+
+    .menu-active li{
+      font-size: 20px;
+      padding: 9px 3px;
+    }
+  }
+      @media (max-width: 499px){ 
+        .menu-active ul{
+          padding: 75% 0px 20px 0px;
+        }
+    
+        .menu-active li{
+          font-size: 20px;
+          padding: 9px 3px;
+        }
+      }
